@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import './css/style.css';
 
+
 import App from './components/App'
 import Home from './components/Home'
 
@@ -18,6 +19,7 @@ render(
   </Router>,
   document.getElementById('root')
 );
+
 
 {/* <Route path="api/:id" component={API}/> */}
 {/* <Route path="books/:id" component={Books}/> */}

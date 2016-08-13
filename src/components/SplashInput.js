@@ -1,23 +1,38 @@
 import React from 'react';
+import {FormGroup, ControlLabel, InputGroup, FormControl, Feedback, ButtonGroup, Button, DropdownButton, MenuItem, Form} from 'react-bootstrap';
 
-// const buttonGroupInstance = (
-//   <ButtonGroup>
-//     <Button>1</Button>
-//     <Button>2</Button>
-//     <DropdownButton title="Dropdown" id="bg-nested-dropdown">
-//       <MenuItem eventKey="1">Dropdown link</MenuItem>
-//       <MenuItem eventKey="2">Dropdown link</MenuItem>
-//     </DropdownButton>
-//   </ButtonGroup>
-// );
 
 const SplashInput = React.createClass({
   render() {
     console.log('hello');
     return (
-      <div>
-        {/* buttonGroupInstance */}
-        <form className='form-inline'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3'>
+            <Form inline>
+              <FormGroup controlId='formInlineNames'>
+               <InputGroup bsSize="large">
+                 <DropdownButton
+                   componentClass={InputGroup.Button}
+                   id="input-dropdown-addon"
+                   title="Movie">
+                   <MenuItem key="1">Book</MenuItem>
+                 </DropdownButton>
+                 <FormControl type="text" placeholder="Title"/>
+                 {/* <InputGroup.FormControl>
+                  <FormControl type="text" placeholder="Year"/>
+                 </InputGroup.FormControl> */}
+               </InputGroup>
+             </FormGroup>
+            </Form>
+          </div>
+        </div>
+
+
+
+
+
+        {/* <form className='form-inline'>
           <div className="input-group">
 
 
@@ -42,7 +57,7 @@ const SplashInput = React.createClass({
               <button className="btn btn-default">Search</button>
             </span>
           </div>
-        </form>
+        </form> */}
         {/* <form id='pokeForm'>
           <div className="input-group">
             <input type="number" className="form-control" placeholder="Pokemon ID" required/>
