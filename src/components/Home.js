@@ -8,7 +8,7 @@ const Home = React.createClass({
     return (
       <div>
         <div className='jumbotron' id='splashJumbo'>
-        <h1>Read and Watch</h1>
+        <h1 id='splashTitle'>Read and Watch</h1>
         <SplashInput />
         </div>
       </div>

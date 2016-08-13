@@ -1,15 +1,23 @@
 #splashJumbo {
   background-image: url('https://hd.unsplash.com/photo-1423592707957-3b212afa6733');
   background-size: cover;
-  position:center;
+  /*position:center;*/
   text-align: center;
+}
+
+#splashTitle {
+  margin-top: 10%;
+  padding: 30px;
+}
+
+#splashForm {
+  border-radius: 10px;
 }
 
 .navbar {
   margin: 0;
   background: rgba(0, 0, 0, 0.1);
 }
-
 
 .navbar-default{
  border-color: transparent;
