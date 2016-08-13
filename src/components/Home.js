@@ -1,15 +1,15 @@
 import React from 'react';
 
+import SplashInput from './SplashInput';
+
 const Home = React.createClass({
   render() {
     console.log('hello');
     return (
       <div>
         <div className='jumbotron' id='splashJumbo'>
-        <h1>adfasd;f</h1>
-        <h1>adfasd;f</h1>
-        <h1>adfasd;f</h1>
-        <p>hello</p>
+        <h1>Read and Watch</h1>
+        <SplashInput />
         </div>
       </div>
     );

@@ -2,4 +2,8 @@
   background-image: url('https://hd.unsplash.com/photo-1423592707957-3b212afa6733');
   background-size: cover;
   position:center;
+  text-align: center;
+}
+.navbar {
+  margin: 0;
 }

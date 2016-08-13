@@ -5,7 +5,7 @@ const App = React.createClass({
   render() {
     return (
       <div>
-        <nav className="navbar navbar-default">
+        <nav className="navbar navbar-default navbar-fixed-top">
           <div className="container-fluid">
             <div className="navbar-header">
               <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -26,23 +26,12 @@ const App = React.createClass({
               </form>
               <ul className="nav navbar-nav navbar-right">
                 <li><a href="#">Link</a></li>
-
               </ul>
             </div>
           </div>
         </nav>
         {this.props.children}
       </div>
-
-
-      // <div className='container'>
-      //   {/* <Link to='/'><button className='btn btn-default'>Home</button></Link> */}
-      //   {/* <Link to='/api/1'><button className='btn btn-default'>Movie</button></Link> */}
-      //   {/* <Link to='/books/1'><button className='btn btn-default'>Book</button></Link> */}
-      //
-      //   {this.props.children}
-      //
-      // </div>
     );
   }
 });
