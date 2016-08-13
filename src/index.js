@@ -6,20 +6,22 @@ import './css/style.css';
 
 import App from './components/App'
 import Home from './components/Home'
+import SearchPage from './components/SearchPage'
 
-// import API from './components/API'
-// import Books from './components/books.js'
+// import Movie from './components/Movie'
+// import Book from './components/Book'
 
 
 render(
   <Router history={browserHistory}>
     <Route path='/' component={App}>
-      <IndexRoute component={Home}/>
+      {/* <IndexRoute component={Home}/> */}
+      <IndexRoute component={SearchPage}/>
     </Route>
   </Router>,
   document.getElementById('root')
 );
 
 
-{/* <Route path="api/:id" component={API}/> */}
-{/* <Route path="books/:id" component={Books}/> */}
+{/* <Route path="Movie/:id" component={Movie}/> */}
+{/* <Route path="book/:id" component={Book}/> */}
