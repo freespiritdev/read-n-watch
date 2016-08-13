@@ -25,12 +25,12 @@ const Movie = React.createClass({
         <div>
           <img src={Poster} />
           <h3>{Title} ({Year})</h3>
-          <h4>{Plot}</h4>
-          <h4>Director: {Director}</h4>
-          <h4>Writer: {Writer}</h4>
-          <h4>Rated: {Rated}</h4>
-          <h4>Genre: {Genre}</h4>
-          <h4>Rating: {imdbRating}/10</h4>
+          <p>{Plot}</p>
+          <h3>Director: {Director}</h3>
+          <h3>Writer: {Writer}</h3>
+          <h3>Rated: {Rated}</h3>
+          <h3>Genre: {Genre}</h3>
+          <h3>Rating: {imdbRating}/10</h3>
         </div>
       );
     } else {
