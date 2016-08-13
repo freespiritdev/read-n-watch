@@ -19,10 +19,10 @@ const SplashInput = React.createClass({
                   </DropdownButton>
                 </InputGroup>
                 <InputGroup bsSize="large">
-                  <FormControl type="text" placeholder="Title"/>
+                  <FormControl type="text" placeholder="Title" id ='titleInput'/>
                 </InputGroup>
                 <InputGroup bsSize="large">
-                  <FormControl type="text" placeholder="Year (optional)"/>
+                  <FormControl type="text" placeholder="Year (optional)" id="yearInput"/>
                 </InputGroup>
                 <InputGroup bsSize="large">
                   <InputGroup.Button bsSize="large">
