@@ -1,7 +1,7 @@
 import React from 'react';
 import { ajax } from 'jquery';
 
-const Books = React.createClass({
+const Book = React.createClass({
   getInitialState() {
     return {
       bookTitle: 'the-notebook',
@@ -22,6 +22,7 @@ const Books = React.createClass({
   render() {
     if (this.state.book){
       let {author} = this.state.book.items[0].volumeInfo.authors[0];
+      //title, authors, publisher, publishedDate(year), pageCount, printType, averageRating, imageLinks.thumbnail, previewLink, textSnippet, 
       console.log('this.state.book[0]', this.state.book.items[0].volumeInfo.authors[0]);
       return (
         <div>
@@ -30,7 +31,7 @@ const Books = React.createClass({
             <input type="number" min='1' onChange={this.updatePerson} />
           </div>
         </form>
-        <h1>Books Books</h1>
+        <h1>Book Book</h1>
         <h3>Author:{author}</h3>
         </div>
       );
@@ -40,4 +41,4 @@ const Books = React.createClass({
   }
 });
 
-export default Books;
+export default Book;
