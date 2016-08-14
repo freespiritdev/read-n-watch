@@ -27,9 +27,9 @@ const App = React.createClass({
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <form className="navbar-form navbar-left">
                 <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Search" onChange={this.update}/>
+                  <input type="text" className="form-control" placeholder="Search" id="mainInput" onChange={this.update}/>
                 </div>
-                <Link to={"/search/"+this.state.text} ><button className="btn btn-default">Search</button></Link>
+                <Link to={"/search/"+this.state.text} ><button className="btn btn-search glyphicon glyphicon-search"></button></Link>
               </form>
               <ul className="nav navbar-nav navbar-right">
                 <li><a href="#">Link</a></li>

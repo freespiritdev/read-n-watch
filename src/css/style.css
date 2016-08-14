@@ -1,3 +1,6 @@
+body{
+  font-family: 'Lakki Reddy', cursive, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 #splashJumbo {
   background-image: url('https://hd.unsplash.com/photo-1423592707957-3b212afa6733');
   background-size: cover;
@@ -7,6 +10,7 @@
 #splashTitle {
   margin-top: 10%;
   padding: 30px;
+  font-weight: bold;
 }
 
 #splashForm {
@@ -18,13 +22,17 @@
   background: rgba(0, 0, 0, 0.1);
 }
 
-.navbar-default{
- border-color: transparent;
-
+.navbar {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.1);
 }
 
-.placeHolder {
-  min-height: 100px;
+.navbar-default{
+ border-color: transparent;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover{
+  color: #fff;
 }
 
 #searchPageContainer {
@@ -46,3 +54,88 @@
 #imdbBtn {
   max-height: 50px;
 }
+
+#titleInput, #yearInput{
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btn-search, .btn-search:hover{
+  background-color:rgba(0,0,0,.5);
+  color: #fff;
+}
+
+.btn-search{
+  color: #fff;
+}
+
+.btn-default {
+  background-color: #d28374;
+  border-color: transparent;
+
+}
+
+.btn-default:hover{
+  background-color: #df9685;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-brand{
+  color: #fff;
+  font-size: 22px;
+}
+
+input.form-control{
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+  font-weight: bold;  
+}
+
+input::-webkit-input-placeholder {
+  color: #fff !important;
+  font-size: 18px;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+  color: #fff !important;
+  font-size: 18px; 
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff !important;
+  font-size: 18px; 
+}
+ 
+input:-ms-input-placeholder {  
+  color: #fff !important;
+  font-size: 18px; 
+}
+
+input#mainInput.form-control{
+  color: #fff;
+}
+.input-group-btn-lg{
+  padding: 9px 0px;
+}
+
+#mainInput{
+ height: auto;
+ width: 375px;
+ padding: 8.5px 0 10.5px 11px;
+ border: 0;
+ outline: 0;
+ box-sizing: border-box;
+ margin-right: 5px;
+ box-shadow: inset 0 1px 1px rgba(255,255,255,.075);
+ text-align: center;
+ color: #fff;
+ font-size: 18px;
+}
+
+#titleInput, #yearInput{
+  background-color: #fff;
+  border-color: #ccc;
+  color: #222;
+}
+
