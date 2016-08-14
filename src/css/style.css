@@ -1,7 +1,6 @@
 #splashJumbo {
   background-image: url('https://hd.unsplash.com/photo-1423592707957-3b212afa6733');
   background-size: cover;
-  /*position:center;*/
   text-align: center;
 }
 
@@ -25,10 +24,25 @@
 }
 
 .placeHolder {
-  border: 1px solid #000;
   min-height: 100px;
 }
 
 #searchPageContainer {
   margin-top: 50px;
+}
+.templateDiv {
+  margin: 20px;
+  margin-top: 40px;
+}
+.templatePic {
+  text-align: center;
+}
+.picture {
+  height: 300px;
+}
+.linkButton {
+  text-align: center;
+}
+#imdbBtn {
+  max-height: 50px;
 }

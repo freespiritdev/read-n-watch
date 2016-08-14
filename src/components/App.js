@@ -2,6 +2,14 @@ import React from 'react'
 import { Link } from 'react-router'
 
 const App = React.createClass({
+  getInitialState() {
+    return {
+      text: null
+    }
+  },
+  update(event) {
+    this.setState({text: event.target.value});
+  },
   render() {
     return (
       <div className="container-fluid">
@@ -21,9 +29,9 @@ const App = React.createClass({
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <form className="navbar-form navbar-left">
                     <div className="form-group">
-                      <input type="text" className="form-control" placeholder="Search"/>
+                      <input type="text" className="form-control" placeholder="Search" onChange={this.update}/>
                     </div>
-                    <button type="submit" className="btn btn-default">Submit</button>
+                    <Link to={"/search/"+this.state.text} ><button className="btn btn-default">Search</button></Link>
                   </form>
                   <ul className="nav navbar-nav navbar-right">
                     <li><a href="#">Link</a></li>
